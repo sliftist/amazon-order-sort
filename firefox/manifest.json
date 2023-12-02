@@ -3,7 +3,7 @@
   "name": "Amazon Sort By Arrival",
   "version": "1.0",
   "author": "Alex Gulikers",
-  "homepage_url": "",
+  "homepage_url": "https://github.com/7MinutesDead-Git/amazon-order-sort",
 
   "description": "Extracts and sorts orders based on estimated arrival, rather than based on when you placed the order.",
 
