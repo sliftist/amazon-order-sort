@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Sort By Arrival",
+  "version": "1.0",
+  "author": "Alex Gulikers",
+  "homepage_url": "",
+
+  "description": "Extracts and sorts orders based on estimated arrival, rather than based on when you placed the order.",
+
+  "icons": {
+    "96": "icons/sort-128.png",
+    "48": "icons/sort-64.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "*://*.amazon.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.com/*"],
+      "js": ["amazon-order-sort.js"]
+    }
+  ]
+}
