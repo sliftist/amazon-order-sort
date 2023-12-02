@@ -35,7 +35,7 @@ const weights = {
     'late': 5,
 }
 
-async function sortAmazonOrders() {
+function sortAmazonOrders() {
     const deliveryBoxes = document.querySelectorAll('.delivery-box')
     const shipmentBoxes = document.querySelectorAll('.a-box.shipment')
     const allShipmentElements = [...deliveryBoxes, ...shipmentBoxes]
