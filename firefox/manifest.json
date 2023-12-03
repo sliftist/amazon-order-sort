@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Amazon Sort By Arrival",
   "version": "1.0",
   "author": "Alex Gulikers",
@@ -8,8 +8,8 @@
   "description": "Extracts and sorts orders based on estimated arrival, rather than based on when you placed the order.",
 
   "icons": {
-    "96": "icons/sort-128.png",
-    "48": "icons/sort-64.png"
+    "96": "icons/sort-96.png",
+    "48": "icons/sort-48.png"
   },
 
   "permissions": [
@@ -17,14 +17,18 @@
     "scripting"
   ],
 
-  "host_permissions": [
-    "*://*.amazon.com/*"
-  ],
-
   "content_scripts": [
     {
       "matches": ["*://*.amazon.com/*"],
       "js": ["amazon-order-sort.js"]
     }
-  ]
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "7MD-Amazon-Arrival-Sort@example.com",
+      "strict_min_version": "109.0"
+    }
+}
+
 }
